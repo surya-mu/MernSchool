@@ -1,0 +1,104 @@
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    display:flex;
+    align-items: stretch;
+    justify-content: space-around;
+    /* background-image:linear-gradient(-180deg,var(--bg-200),var(--accent-100));
+    padding: 0; */
+    margin-top:-8px;
+    width:100%;
+    /* position: sticky;
+    top:0; */
+    z-index: 0;
+    height:95px;
+    
+}
+
+nav h1{
+    padding: 0 1rem;
+    font-size: 33px;
+    display:flex;
+    align-items: center;    
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,var(--accent-200),var(--accent-100));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    
+}
+
+nav h1 a{
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    z-index: inherit;
+    position: sticky;
+    top:0;
+        -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(0deg,var(--accent-200),var(--accent-100));
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform:preserve3D;
+}
+
+nav ul {
+    display:flex;
+    position:relative;
+    list-style: none;
+    gap: 2rem;  
+    font-family: 'Poppins',sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+}
+nav ul li{
+    display:flex;
+    align-items: center;
+
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:var(--text-100);
+    padding: 10px;
+    font-weight: 400;
+    transition:all 0.15s ease-in-out;
+}
+
+.nav-logo{
+        text-decoration: none;
+}
+
+.active{
+    color:var(--text-100);
+    background-color: #acc2ef92;
+    border-radius: 12px;
+}
+
+nav ul li a:not(.active):hover{
+    color:var(--text-100);
+    background-color: #acc2efa8;
+    border-radius: 12px;
+    color:var(--bg-100);
+}
+
+nav h1 a{
+    font-weight: 900;
+    padding: 0;
+    -webkit-text-stroke-color: black;
+    
+}
+
+nav img{
+    width:100px;
+    position:relative;
+    padding:0px;
+    display:flex;
+    margin-left: -600px;
+    margin-bottom:25px;
+    z-index: -1;
+    transition: transform 0.3s ease, background-color 0.15s;
+}
+
